@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+@import url('../css/masterhead.css');
+@import url('../css/features.css');
+@import url('../css/works.css');
+@import url('../css/team.css');
+@import url('../css/downlod.css');
+@import url('../css/footer.css');
+
+body,
+html{
+    height: 100%;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Raleway";
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1{
+    font-family: "Open Sans";
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 14px;
+}

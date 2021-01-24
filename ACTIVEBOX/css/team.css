@@ -1,0 +1,68 @@
+.team__box{
+    padding: 75px 0;
+    margin: 0 -10px;
+}
+.team__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.team__cards-item{
+    max-width: 270px;
+    text-align: left;
+    margin: 25px 10px;
+}
+.item__social{
+    margin-top: 30px;
+}
+
+
+/* FONTS */
+.item__name {
+    font-size: 22px;
+    margin-top: 20px;
+}
+.item__job {
+    font-size: 13px;
+    margin-top: 12px;
+    text-transform: uppercase;
+    color: #E84545;
+}
+.item__info {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #6C7279;
+    line-height: 21px;
+}
+.social-link{
+}
+.fab{
+    text-align: center;
+    width: 41px;
+    height: 41px;
+    font-size: 25px;
+    padding-top: 7px;
+    color: #6C7279;
+    border: 1px solid #6C7279;
+    transition: all linear 0.2s;
+}
+.fab:hover{
+    color: #405ce5;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1190px){
+    .team__box{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .team__cards{
+        justify-content: space-around;
+    }
+    .team__cards-item{
+        max-width: 270px;
+        text-align: left;
+        margin: 25px 10px;
+    }
+}

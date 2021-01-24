@@ -1,0 +1,40 @@
+.features{
+
+}
+.features__box{
+    padding: 90px 0;
+}
+.features__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.features__cards-item{
+    max-width: 296px;
+    margin: 30px;
+}
+.card__image{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+}
+
+/* FONTS 
+*/
+.card__title{
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.card__text{
+    font-size: 14px;
+    line-height: 20px;
+    color: #6C7279;
+}
+
+
+@media screen and (max-width: 1115px){
+    .features__cards{
+        justify-content: space-around;
+    }
+}

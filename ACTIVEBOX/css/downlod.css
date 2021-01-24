@@ -1,0 +1,38 @@
+.download{
+    border-top: 1px solid #000000;
+}
+
+.download__box{
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* FONTS */
+.download__title{
+    font-size: 28px;
+    color: #2D3033;
+    font-weight: lighter;
+}
+.download__subtitle{
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2D3033;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.download__link{
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #E84545;
+    padding: 10px 45px;
+    transition: all linear 0.3s;
+}
+.download__link:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
