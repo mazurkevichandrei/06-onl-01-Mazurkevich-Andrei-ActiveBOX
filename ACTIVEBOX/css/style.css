@@ -73,6 +73,9 @@ h3 {
   align-items: center;
   justify-content: flex-end;
 }
+.navigation__box-item:nth-child(5) {
+  margin-right: -20px;
+}
 
 .masterhead-content__box {
   margin: 0 auto;
