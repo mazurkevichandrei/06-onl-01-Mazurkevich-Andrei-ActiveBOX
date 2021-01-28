@@ -224,9 +224,6 @@ h3 {
   border: 1px solid #ffffff;
   position: relative;
 }
-.works__item-image {
-  overflow: hidden;
-}
 
 .work-image {
   display: block;
@@ -384,12 +381,29 @@ h3 {
 }
 .clients__box-item__image {
   width: 50%;
+  max-height: 500px;
+  overflow: hidden;
   font-weight: initial;
 }
 .clients__box-item__feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
   padding-left: 54px;
   background-color: #53354A;
+}
+
+.feedback_two {
+  background-color: lightcoral;
+}
+
+.feedback_three {
+  background-color: #5b63a3;
+}
+
+.feedback_four {
+  background-color: #9264a3;
 }
 
 .feedback__image {
@@ -401,7 +415,6 @@ h3 {
   font-family: "Cardo";
   font-size: 36px;
   max-width: 510px;
-  padding-top: 115px;
   padding-bottom: 30px;
   color: #ffffff;
 }
@@ -411,10 +424,6 @@ h3 {
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.download {
-  border-top: 1px solid #000000;
 }
 
 .download__box {
