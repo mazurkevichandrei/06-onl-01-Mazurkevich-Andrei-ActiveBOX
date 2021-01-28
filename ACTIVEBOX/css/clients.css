@@ -1,0 +1,8 @@
+.clients__box-item {
+  display: flex;
+  flex-direction: row;
+}
+.clients__box-item__image {
+  width: 150px;
+  background-color: aquamarine;
+}

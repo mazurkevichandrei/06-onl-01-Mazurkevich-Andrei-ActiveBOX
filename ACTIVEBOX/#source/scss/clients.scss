@@ -1,0 +1,33 @@
+.clients__box-item{
+    display: flex;
+    flex-direction: row;
+    &__image{
+        width: 50%;
+        // overflow: hidden;
+        font-weight:initial;
+    }
+    &__feedback{
+        width: 50%;
+        padding-left: 54px;
+        background-color: #53354A;       
+    }
+}
+.feedback__image{
+    display: block;
+    width: 100%;
+}
+.feedback__text{
+    font-family: 'Cardo';
+    font-size: 36px;
+    max-width: 510px;
+    padding-top: 115px;
+    padding-bottom: 30px;
+    color: #ffffff;
+}
+.feedback__autor{
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
