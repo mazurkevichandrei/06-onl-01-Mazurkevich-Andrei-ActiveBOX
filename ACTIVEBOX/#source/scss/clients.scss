@@ -5,21 +5,32 @@ $feedback_height: 400px;
 .clients__box-item{
     display: flex;
     flex-direction: row;
+    max-height: 420px;
     // max-height: $feedback_height;
     &__image{
+        display: flex;
         width: 50%;
-        max-height: $feedback_height;
         overflow: hidden;
         font-weight:initial;
+        // position: relative;
     }
     &__feedback{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         width: 50%;
+        padding-top: 80px;
         padding-left: 54px;
-        background-color: #53354A;       
+        background-color: #53354A;      
     }
+}
+.feedback__image{
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: left top;
 }
 .feedback_two{
     background-color: lightcoral;
@@ -30,16 +41,11 @@ $feedback_height: 400px;
 .feedback_four{
     background-color: #9264a3;
 }
-.feedback__image{
-    // max-height: $feedback_height;
-    display: block;
-    width: 100%;
-}
 .feedback__text{
     // max-height: $feedback_height;
     font-family: 'Cardo';
-    font-size: 36px;
-    max-width: 510px;
+    font-size: 35px;
+    max-width: 500px;
     padding-bottom: 30px;
     color: #ffffff;
 }
@@ -103,7 +109,7 @@ $feedback_height: 400px;
     list-style: none;
     position: absolute;
     width: 50%;
-    bottom: 30px;
+    bottom: 70px;
     right: 0;
     justify-content: center;
 }

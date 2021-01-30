@@ -449,20 +449,28 @@ h3 {
 .clients__box-item {
   display: flex;
   flex-direction: row;
+  max-height: 420px;
 }
 .clients__box-item__image {
+  display: flex;
   width: 50%;
-  max-height: 400px;
   overflow: hidden;
   font-weight: initial;
 }
 .clients__box-item__feedback {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 50%;
+  padding-top: 80px;
   padding-left: 54px;
   background-color: #53354A;
+}
+
+.feedback__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: left top;
 }
 
 .feedback_two {
@@ -477,15 +485,10 @@ h3 {
   background-color: #9264a3;
 }
 
-.feedback__image {
-  display: block;
-  width: 100%;
-}
-
 .feedback__text {
   font-family: "Cardo";
-  font-size: 36px;
-  max-width: 510px;
+  font-size: 35px;
+  max-width: 500px;
   padding-bottom: 30px;
   color: #ffffff;
 }
@@ -547,7 +550,7 @@ h3 {
   list-style: none;
   position: absolute;
   width: 50%;
-  bottom: 30px;
+  bottom: 70px;
   right: 0;
   justify-content: center;
 }
