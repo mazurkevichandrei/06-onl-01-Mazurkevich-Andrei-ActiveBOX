@@ -2,6 +2,10 @@
     padding: 75px 0;
     margin: 0 -10px;
 }
+.team__cards__slider{
+    display: none;
+    position: relative;
+}
 .team__cards{
     display: flex;
     flex-direction: row;
@@ -64,5 +68,62 @@
         max-width: 270px;
         text-align: left;
         margin: 25px 10px;
+    }
+}
+@media screen and (max-width: 630px){
+    .team__cards{
+        display: none;
+    }
+    .team__cards__slider{
+        display: block;
+    }
+    .team__cards__slider .team__cards-item{
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .team__cards__slider .item__info{
+        text-align: center;
+        padding: 0 40px;
+    }
+    .team__cards__slider .slick-arrow{
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: none;
+        display: none;
+    }
+
+    .team__cards__slider .slick-dots{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 100%;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+    }
+    .team__cards__slider .slick-dots button{
+        font-size: 0;
+        display: none;
+    }
+    .team__cards__slider .slick-dots li{
+        width: 10px;
+        height: 10px;
+        border:  0;
+        border-radius: 50%;
+        background-color: #000000;
+        opacity: 0.3;
+        margin: 0 15px;
+        transition: all linear 0.3s;
+    }
+    .team__cards__slider .slick-dots .slick-active{
+        background-color: #E84545;
+        opacity: 0.9;
+        transform: scale(1.4);
     }
 }

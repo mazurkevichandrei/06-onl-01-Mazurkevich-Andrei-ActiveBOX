@@ -4,6 +4,16 @@
     flex-wrap: wrap;
     margin: 0 auto;
 }
+.works__box__slider{
+    display: none;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+.works__box__slider .works__item{
+    max-width: 100%;
+    width: 100%;
+}
 .works__item{
     width: 25%;
     border: 1px solid #ffffff;
@@ -52,6 +62,8 @@
 //     color: rgba(255, 255, 255, 0.6);
 // }
 
+
+
 @media screen and (max-width: 1190px){
     .works__item{
         width: 50%;
@@ -82,4 +94,78 @@
     .works__item:hover .works__item__info-subtitle{
         color: rgba(255, 255, 255, 1);
     }
+}
+
+@media screen and (max-width: 770px){
+    .works__box{
+        display: none;
+    }
+    .works{
+        padding: 0 15px;
+    }
+    .works__box__slider{
+        display: block;
+        width: 100%;
+    }
+    .works__box__slider .works__item{
+        width: 100%;
+    }
+    //Slider
+.works__box__slider .slick-arrow{
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    z-index: 10;
+    border: 0;
+    outline: none;
+    opacity: 0.2;
+    transition: all linear 0.3s;
+    &:hover{
+        opacity: 0.4;
+    }
+    
+}
+.works__box__slider .slick-prev{
+    left: 0;
+    background-image: url('../img/slider/prev.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.works__box__slider .slick-next{
+    right: 0;
+    top: 0;
+    background-image: url('../img/slider/next.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.works__box__slider .slick-dots{
+    display: flex;
+    position: absolute;
+    top: 100%;
+    margin-top: 25px;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+.works__box__slider .slick-dots button{
+    font-size: 0;
+    display: none;
+}
+.works__box__slider .slick-dots li{
+    width: 10px;
+    height: 10px;
+    border:  0;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 0.3;
+    margin: 0 10px;
+    transition: all linear 0.3s;
+}
+.works__box__slider .slick-dots .slick-active{
+    background-color: #E84545;
+    opacity: 0.9;
+    transform: scale(1.4);
+}
 }
