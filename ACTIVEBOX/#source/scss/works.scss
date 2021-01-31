@@ -101,7 +101,7 @@
         display: none;
     }
     .works{
-        padding: 0 15px;
+        // padding: 0 15px;
     }
     .works__box__slider{
         display: block;
@@ -124,8 +124,7 @@
     transition: all linear 0.3s;
     &:hover{
         opacity: 0.4;
-    }
-    
+    }    
 }
 .works__box__slider .slick-prev{
     left: 0;

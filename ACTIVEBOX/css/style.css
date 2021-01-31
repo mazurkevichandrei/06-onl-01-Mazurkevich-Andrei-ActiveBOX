@@ -389,10 +389,6 @@ h3 {
     display: none;
   }
 
-  .works {
-    padding: 0 15px;
-  }
-
   .works__box__slider {
     display: block;
     width: 100%;
@@ -799,6 +795,7 @@ h3 {
   font-weight: 600;
   color: #ffffff;
   background-color: #E84545;
+  border: 1px solid #E84545;
   padding: 10px 45px;
   transition: all linear 0.3s;
 }
