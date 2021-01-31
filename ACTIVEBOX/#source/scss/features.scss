@@ -75,10 +75,7 @@
         outline: none;
         opacity: 0.1;
         transition: all linear 0.3s;
-        background-color: rgba(10, 10, 10, 0.0);
-        &:hover{
-            opacity: 0.1;
-        }    
+        background-color: rgba(10, 10, 10, 0.0);   
     }
     .features__cards__slider .slick-prev{
         left: 0;
@@ -130,6 +127,7 @@
         max-width: 90%;
     }
     .features__cards__slider .slick-arrow{
-        display: none;
+        width: 25%;
+        opacity: 0;
     }
 }

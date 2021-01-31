@@ -91,22 +91,28 @@
     .team__cards__slider .slick-arrow{
         font-size: 0;
         width: 25%;
-        height: 100%;
+        height: 340px;
         position: absolute;
         margin: 0;
         padding: 0;
         border: 0;
         z-index: 10;
-        opacity: 0;
+        opacity: 0.1;
         outline: none;
         display: none;
     }
     .team__cards__slider .slick-prev{
         left: 0;
+        background-image: url('../img/slider/prev.png');
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .team__cards__slider .slick-next{
         right: 0;
         top: 0;
+        background-image: url('../img/slider/next.png');
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .team__cards__slider .slick-dots{
         display: flex;
@@ -136,5 +142,13 @@
         background-color: #E84545;
         opacity: 0.9;
         transform: scale(1.4);
+    }
+}
+
+@media screen and (max-width: 550px){
+ 
+    .team__cards__slider .slick-arrow{
+        width: 25%;
+        opacity: 0;
     }
 }
