@@ -120,8 +120,9 @@
     z-index: 10;
     border: 0;
     outline: none;
-    opacity: 0.2;
+    opacity: 0.3;
     transition: all linear 0.3s;
+    background-color: rgba(255,255,255,0.6);
     &:hover{
         opacity: 0.4;
     }    
