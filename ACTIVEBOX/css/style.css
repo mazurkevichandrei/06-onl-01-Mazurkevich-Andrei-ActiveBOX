@@ -541,12 +541,12 @@ h3 {
     z-index: 10;
     border: 0;
     outline: none;
-    opacity: 0.3;
+    opacity: 0.5;
     transition: all linear 0.3s;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
   }
   .works__box__slider .slick-arrow:hover {
-    opacity: 0.4;
+    opacity: 0.5;
   }
 
   .works__box__slider .slick-prev {
@@ -905,10 +905,12 @@ h3 {
   }
 
   .clients__slider .slick-arrow {
-    opacity: 0.05;
+    opacity: 0.1;
+    width: 10%;
+    background-color: rgba(255, 255, 255, 0);
   }
   .clients__slider .slick-arrow:hover {
-    opacity: 0.05;
+    opacity: 0.1;
   }
 
   .clients__slider .slick-dots {
