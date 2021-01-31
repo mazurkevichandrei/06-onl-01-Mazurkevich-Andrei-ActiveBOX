@@ -9,6 +9,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.features__cards__slider{
+    display: none;
+}
 .features__cards-item{
     max-width: 296px;
     margin: 30px;
@@ -36,5 +39,97 @@
 @media screen and (max-width: 1115px){
     .features__cards{
         justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .container__features{
+        padding: 0;
+    }
+    .features__box{
+        padding: 0;
+    }
+    .features__cards{
+        display: none;
+    }
+    .features__cards__slider{
+        display: block;
+        position: relative;
+    }
+    .features__cards__slider .features__cards-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 90px 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .features__cards__slider .slick-arrow{
+        font-size: 0;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 20%;
+        z-index: 10;
+        border: 0;
+        outline: none;
+        opacity: 0.1;
+        transition: all linear 0.3s;
+        background-color: rgba(10, 10, 10, 0.1);
+        &:hover{
+            opacity: 0.1;
+        }    
+    }
+    .features__cards__slider .slick-prev{
+        left: 0;
+        background-image: url('../img/slider/prev.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .features__cards__slider .slick-next{
+        right: 0;
+        top: 0;
+        background-image: url('../img/slider/next.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .card__text{
+        max-width: 60%;
+    }
+    .features__cards__slider .slick-dots{
+        display: flex;
+        position: absolute;
+        bottom: 60px;
+        margin-top: 0px;
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+    }
+    .features__cards__slider .slick-dots button{
+        font-size: 0;
+        display: none;
+    }
+    .features__cards__slider .slick-dots li{
+        width: 10px;
+        height: 10px;
+        border:  0;
+        border-radius: 50%;
+        background-color: #000000;
+        opacity: 0.3;
+        margin: 0 10px;
+        transition: all linear 0.3s;
+    }
+    .features__cards__slider .slick-dots .slick-active{
+        background-color: #E84545;
+        opacity: 0.9;
+        transform: scale(1.4);
+    }
+}
+@media screen and (max-width: 550px){
+    .card__text{
+        max-width: 90%;
+    }
+    .features__cards__slider .slick-arrow{
+        display: none;
     }
 }

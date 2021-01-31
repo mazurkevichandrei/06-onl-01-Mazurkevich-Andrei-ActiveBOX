@@ -5,6 +5,14 @@ $(document).ready(function(){
 })
 
 $(document).ready(function(){
+    $('.features__cards__slider').slick({
+        slidesToShow:1,
+        dots:true,
+    });
+    $('.features__cards__slider').slick('setPosition');
+})
+
+$(document).ready(function(){
     $('.works__box__slider').slick({
         dots:true,
     });
