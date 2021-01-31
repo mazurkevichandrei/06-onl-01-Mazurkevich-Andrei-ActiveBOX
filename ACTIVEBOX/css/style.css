@@ -351,7 +351,7 @@ h3 {
     outline: none;
     opacity: 0.1;
     transition: all linear 0.3s;
-    background-color: rgba(10, 10, 10, 0.1);
+    background-color: rgba(10, 10, 10, 0);
   }
   .features__cards__slider .slick-arrow:hover {
     opacity: 0.1;
