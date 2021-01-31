@@ -107,6 +107,24 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+    .team__cards__slider .slick-prev::after{
+        display: block;
+        position: absolute;
+        bottom: -187px;
+        content: "";
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    .team__cards__slider .slick-next::after{
+        display: block;
+        position: absolute;
+        bottom: -187px;
+        content: "";
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
     .team__cards__slider .slick-next{
         right: 0;
         top: 0;
@@ -151,5 +169,11 @@
         width: 25%;
         height: 100%;
         opacity: 0;
+    }
+    .team__cards__slider .slick-prev::after{
+        display: none;
+    }
+    .team__cards__slider .slick-next::after{
+        display: none;
     }
 }
