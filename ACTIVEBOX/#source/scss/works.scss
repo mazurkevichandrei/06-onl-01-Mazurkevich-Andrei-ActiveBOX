@@ -144,7 +144,9 @@
     display: flex;
     position: absolute;
     top: 100%;
-    margin-top: 25px;
+    //margin-top: 25px;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(139, 139, 141, 0.6);
     list-style: none;
     width: 100%;
     justify-content: center;
